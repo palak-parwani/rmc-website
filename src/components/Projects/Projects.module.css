@@ -35,6 +35,12 @@
   background-position: center;
   filter: brightness(60%);
   transition: 0.4s ease;
+   position: relative;
+}
+
+
+.image {
+  object-fit: cover;
 }
 
 .card:hover .bg {

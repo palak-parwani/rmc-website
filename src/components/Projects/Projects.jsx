@@ -2,6 +2,8 @@
 import { useState } from "react";
 import styles from "./Projects.module.css";
 import { FiSearch, FiX } from "react-icons/fi";
+import Image from "next/image";
+
 
 export default function Projects() {
   const [previewImage, setPreviewImage] = useState(null);
@@ -44,11 +46,15 @@ export default function Projects() {
                 key={i}
                 onClick={() => setPreviewImage(item.img)}
               >
-                <div
-                  className={styles.bg}
-                  style={{ backgroundImage: `url(${item.img})` }}
-                ></div>
-
+                <div className={styles.bg}>
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 600px) 100vw, 33vw"
+                    className={styles.image}
+                  />
+                </div>
                 <div className={styles.overlay}>
                   <FiSearch className={styles.icon} />
                   <h3>{item.title}</h3>
