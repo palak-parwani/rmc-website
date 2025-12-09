@@ -1,0 +1,92 @@
+.section {
+  padding: 0px 0 100 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Each step box */
+.stepBox {
+  text-align: center;
+  width: 180px;
+  position: relative;
+}
+
+/* Step Circle */
+.circle {
+  width: 55px;
+  height: 55px;
+  background: #fa4f1b;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  z-index: 5;
+}
+
+/* Connecting Line */
+.line {
+  position: absolute;
+  top: 27px;
+  left: 100%;
+  width: calc(100% - 20px);
+  height: 3px;
+  background: #fa4f1b;
+  z-index: 1;
+}
+
+/* Icon */
+.icon {
+  font-size: 32px;
+  color: #fa4f1b;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.stepBox h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Description */
+.stepBox p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .stepBox {
+    margin-bottom: 50px;
+  }
+}

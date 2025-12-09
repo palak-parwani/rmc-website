@@ -1,0 +1,108 @@
+/* HERO BANNER */
+.heroSection {
+  height: 320px;
+  background-image: url("/images/machineries/hero-rmc-plant.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.section{
+    padding: 100px 120px;
+}
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.heroTitle {
+  font-size: 38px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.heroSubtitle {
+  font-size: 16px;
+  color: #eee;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* SECTION HEADINGS */
+.pageHeading {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.pageSubtext {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.equipmentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* CARDS */
+.equipmentCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 0 0 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease;
+}
+
+.equipmentCard:hover {
+  transform: translateY(-6px);
+}
+
+.cardImg {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 18px 8px;
+  color: #222;
+}
+
+.machineList {
+  padding: 0 37px;
+  list-style: disc;
+}
+
+.machineList li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroSection {
+    height: 260px;
+  }
+
+  .heroTitle {
+    font-size: 30px;
+  }
+}

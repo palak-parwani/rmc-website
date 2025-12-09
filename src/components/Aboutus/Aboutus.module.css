@@ -1,0 +1,262 @@
+.AboutSection {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url("../../../public/images/contactusBanner.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mission-section {
+  background-color: #f8f9fa;
+}
+
+.section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.iconTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  color: #00a6a6;
+  font-size: 26px;
+}
+
+.missionBox,
+.visionBox,
+.valuesBox {
+  margin-bottom: 50px;
+}
+
+.missionBox p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.visionHeader {
+  display: flex;
+  align-items: center;
+  background-color: #00a6a6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: fit-content;
+  margin-bottom: 25px;
+}
+
+.visionItems {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardIcon {
+  font-size: 32px;
+  color: #00a6a6;
+  margin-bottom: 10px;
+}
+
+.valuesBox {
+  border-top: 2px solid #f0f0f0;
+  padding-top: 30px;
+}
+
+.valuesRow {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.misison{
+  width: 70px;
+  height: 70px;
+}
+.cardBox {
+      margin-top: 46px;
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  padding: 50px 25px 30px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-bottom: 8px solid transparent;
+  transition: 0.3s ease;
+  height:241px;
+}
+
+.cardBox:hover {
+  transform: translateY(-4px);
+}
+
+.iconCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+      box-shadow: 0 6px 20px #00000014;
+}
+.text {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.icon {
+width: 40px;
+height: 40px;
+}
+.title{
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+}
+
+
+.statsContainer {
+  background: linear-gradient(90deg, #0f7c8b, #2fa2a8);
+  padding: 30px 20px;
+  border-radius: 12px;
+}
+
+.colBox {
+  padding: 10px 0;
+}
+
+.number {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e3e3e3;
+  letter-spacing: 1px;
+}
+
+.borderLeft {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.header h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.header p {
+  color: #555;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.cardBox2 {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.cardBox2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.icon2 {
+  font-size: 40px;
+  color: #0f7c8b;
+  margin-bottom: 15px;
+}
+
+.title2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.text2 {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .borderLeft {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+  .number {
+    font-size: 30px;
+  }
+}

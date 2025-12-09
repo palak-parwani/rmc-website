@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 40px;
+  border-bottom: 2px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLogo {
+  cursor: pointer;
+}
+
+.navbarRight ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarRight li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbarRight li a:hover {
+  color: #e67e22; /* Construction theme orange */
+}

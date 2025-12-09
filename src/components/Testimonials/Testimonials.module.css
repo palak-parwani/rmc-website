@@ -1,0 +1,90 @@
+.heading {
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 38px;
+}
+
+/* Slider Container */
+.sliderWrapper {
+  padding: 20px 0;
+}
+
+/* Card base wrapper */
+.cardWrapper {
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Card style */
+.card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.4s ease;
+  min-height: 224px;
+}
+
+/* Center card zoom effect */
+.slick-center .card {
+  transform: scale(1.15);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+  border-color: #ff7a21;
+}
+
+/* Profile Row */
+.profileRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+/* Avatar */
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff7a21;
+}
+
+/* Username */
+.name {
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Stars */
+.stars {
+  display: flex;
+  gap: 3px;
+}
+
+.starIcon {
+  color: #ffb703;
+  font-size: 16px;
+}
+
+/* Review Text */
+.review {
+  margin-top: 12px;
+  color: #444;
+  line-height: 1.6;
+  min-height: 48px; /* ALWAYS 2 lines */
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slick-center .card {
+    transform: scale(1);
+  }
+
+  .card {
+    padding: 22px;
+  }
+}

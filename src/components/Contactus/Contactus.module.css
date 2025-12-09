@@ -1,0 +1,150 @@
+
+.contactSection {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url("../../../public/images/contactusBanner.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.header {
+  text-align: left;
+}
+
+.header h2 {
+  font-size: 28px;
+  color: #121212;
+  font-weight: 700;
+}
+
+.header p {
+  color: #555;
+  margin-top: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.mapContainer {
+  flex: 1.3;
+  min-width: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.infoContainer {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f9f9f9;
+      padding: 27px 10px;
+
+  border-radius:4px;
+  transition: 0.3s ease;
+  border: 1px solid #80808036;
+  height: 100%;
+}
+
+.infoBox:hover {
+  transform: translateY(-3px);
+
+}
+
+.iconWrapper {
+  background: #edefe7;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 20px;
+  color: #121212;
+}
+
+.infoBox h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #121212;
+}
+
+.infoBox p {
+  margin: 4px 0 0 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.infoBox a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.infoBox a:hover {
+  text-decoration: underline;
+}
+.formBox{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 70px;
+}
+.ContactFormControl{
+    height: 50px;
+    font-size: 14px;
+}
+.sendBtn{
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 6px;
+    background-color: #e60000;
+    border: 0;
+}
+.ContactFormControl2{
+    font-size: 14px;
+}
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .mapContainer, .infoContainer {
+    width: 100%;
+  }
+}
