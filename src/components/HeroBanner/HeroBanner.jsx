@@ -15,10 +15,9 @@ export default function HeroBanner() {
             </h1>
 
             <p className={styles.subtitle}>
-              Delivering high-quality, precisely mixed concrete with advanced
-              batching technology. Guaranteed strength, durability, and
-              on-time delivery for all your residential, commercial, and
-              infrastructure projects.
+              High-quality, precision-mixed concrete produced using advanced
+batching technology. Assured strength, durability, and timely
+delivery for residential, commercial, and infrastructure projects.
             </p>
 
             {/* CTA Buttons */}

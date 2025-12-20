@@ -17,11 +17,14 @@ import Map from "../Map/Map";
 const Contactus = () => {
   const [formData, setFormData] = useState({
     firstName: "",
-    lastName: "",
-    email: "",
-    phone: "+91",
-    enquiryType: "",
-    message: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  enquiryType: "",
+  projectType: "",
+  concreteGrade: "",
+  projectLocation: "",
+  message: "",
   });
   const [countryCode, setCountryCode] = useState("+91");
   const [phone, setPhone] = useState("");
@@ -158,17 +161,17 @@ const Contactus = () => {
                       <option value="">Enquiry Type</option>
                       <option value="General">General Inquiry</option>
                       <option value="Support">Construction Project Quote</option>
-                      <option value="Feedback">Renovation Work</option>
-                      <option value="Feedback">Material Supply</option>
-                      <option value="Feedback">Partnership / Vendor Inquiry</option>
-                      <option value="Feedback">Other</option>
+                      <option value="Renovation">Renovation Work</option>
+<option value="MaterialSupply">Material Supply</option>
+                      <option value="partnership">Partnership / Vendor Inquiry</option>
+                      <option value="other">Other</option>
                     </Form.Select>
                   </Form.Group>
                 </Col>
                 <Col md={6}>  
                   <Form.Group className="mb-3">
                 <Form.Select
-                  name="Project Type"
+                  name="ProjectType"
                   value={formData.ProjectType}
                   className={styles.ContactFormControl}
                   onChange={handleChange}
@@ -190,7 +193,7 @@ const Contactus = () => {
                 <Col md={6}>
                   <Form.Group className="mb-3">
                     <Form.Select
-                      name="Concrete Grade Required"
+                      name="ConcreteGradeRequired"
                       value={formData.enquiryType}
                       className={styles.ContactFormControl}
                       onChange={handleChange}
@@ -211,7 +214,7 @@ const Contactus = () => {
                 <Col md={6}>  
                   <Form.Control
                     type="text"
-                    name="Project Location"
+                    name="ProjectLocation"
                     className={styles.ContactFormControl}
                     placeholder="Project Location"
                     value={formData.email}

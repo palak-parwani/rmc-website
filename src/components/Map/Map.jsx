@@ -10,7 +10,7 @@ const Map = () => {
     <div className="mt-5">
           <div className={styles.header}>
             <h2 className="heading2">Get In Touch With Us</h2>
-            <p className="desc">Your Project, Our Passion – Let’s Talk</p>
+            <p className="desc">Expert support from consultation to concrete delivery.</p>
           </div>
 
           <Row className="g-3 align-items-stretch">

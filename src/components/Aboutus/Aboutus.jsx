@@ -45,7 +45,7 @@ const Aboutus = () => {
   const stats = [
     { id: 1, value: 300, label: "RMC LOADS DELIVERED" },
     { id: 2, value: 150, label: "CONTRACTORS SERVED" },
-    { id: 3, value: 50, label: "DAILY MIXING CAPACITY (CBM)" },
+    { id: 3, value: 50, label: "DAILY PRODUCTION CAPACITY (CBM)" },
     { id: 4, value: 25, label: "PROJECT PARTNERS" },
   ];
 
@@ -63,7 +63,7 @@ const Aboutus = () => {
     {
       icon: <FaHardHat />,
       title: "Grade-Accurate Concrete",
-      text: "Every batch is produced using automated batching technology, ensuring precise mix ratios and consistent strength.",
+      text: "Every batch is produced using automated batching systems to ensure accurate mix proportions, uniform quality, and dependable strength.",
     },
     {
       icon: <FaTools />,
@@ -78,7 +78,7 @@ const Aboutus = () => {
     {
       icon: <FaClock />,
       title: "End-to-End Support",
-      text: "From selecting the right grade to on-site slump testing, our team assists you at every stage of concrete placement.",
+      text: "From grade selection and mix design to on-site slump testing and technical guidance, our experts support you throughout the concreting process.",
     },
   ];
 
@@ -98,22 +98,22 @@ const Aboutus = () => {
       <div className="standard-padding">
         <Row className="mt-5">
           <Col md={6}>
-            <h3 className="heading2">About Us</h3>
+            <h3 className="heading2">About Super Tech Ready Mix Pvt. Ltd.</h3>
             <p>
-              We are a leading Ready-Mix Concrete (RMC) manufacturer committed to delivering
-              high-quality, durable, and precisely batched concrete for residential, commercial,
-              and industrial projects. Our fully automated batching systems ensure accuracy,
-              consistency, and superior performance in every mix.
+              Super Tech Ready Mix Pvt. Ltd. is a leading Ready-Mix Concrete (RMC) manufacturer,
+committed to delivering high-quality, durable, and precisely batched concrete
+solutions for residential, commercial, and industrial projects.
+
             </p>
             <p>
-              {` With a strong focus on innovation, safety, and on-time delivery, we supply a wide 
-              range of concrete grades from M20 to M50, designed to meet diverse structural needs. 
-              Whether it's foundations, slabs, columns, or large-scale infrastructure, our RMC ensures 
-              long-term strength and reliability.`}
+              {` With fully automated batching plants and strict quality control processes,
+we produce a wide range of concrete grades from M20 to M50, ensuring consistency,
+strength, and superior performance across all structural applications.`}
             </p>
             <p>
-              Backed by experienced engineers, certified quality processes, and modern transit mixers,
-              we continue to serve builders, contractors, and developers with trust and excellence.
+              Backed by experienced engineers, modern transit mixers, and a customer-first
+approach, we have earned the trust of builders, contractors, and developers
+through reliable supply, technical expertise, and on-time delivery.
             </p>
 
           </Col>
@@ -138,7 +138,7 @@ const Aboutus = () => {
               <h3 className={styles.title}>MISSION</h3>
               <p className={styles.text}>
                 To manufacture and supply high-quality Ready-Mix Concrete with precision,
-                reliability, and efficiency — ensuring strong, long-lasting structures for every project.
+                reliability, and efficiency — ensuring strong, safe, and sustainable structures for the future.
               </p>
 
             </div>
@@ -151,8 +151,9 @@ const Aboutus = () => {
               </div>
               <h3 className={styles.title}>VISION</h3>
               <p className={styles.text}>
-                To become the most trusted and innovative RMC provider by adopting advanced
-                production technologies, sustainable practices, and superior quality standards.
+                To become a leading Ready Mix Concrete provider by adopting advanced
+production technologies, sustainable practices, and uncompromising
+quality standards across every project we serve.
               </p>
 
             </div>
@@ -165,8 +166,9 @@ const Aboutus = () => {
               </div>
               <h3 className={styles.title}>VALUES</h3>
               <p className={styles.text}>
-                Quality, reliability, transparency, and customer-centric service define our foundation.
-                We value strong relationships, ethical practices, and consistent performance.
+               Quality, reliability, transparency, and customer commitment form the
+foundation of our values. We believe in ethical practices, strong
+partnerships, and consistent performance on every site.
               </p>
 
             </div>
@@ -202,7 +204,7 @@ const Aboutus = () => {
         <div className={styles.header}>
           <h2 className="heading2">Why Choose Us</h2>
           <p className="desc">
-            Your trusted partner for reliable and high-quality construction services.
+            Your trusted partner for reliable and high-quality Ready Mix Concrete solutions.
           </p>
         </div>
 
