@@ -16,19 +16,19 @@ export default function HeroBanner() {
 
             <p className={styles.subtitle}>
               High-quality, precision-mixed concrete produced using advanced
-batching technology. Assured strength, durability, and timely
-delivery for residential, commercial, and infrastructure projects.
+              batching technology. Assured strength, durability, and timely
+              delivery for residential, commercial, and infrastructure projects.
             </p>
 
             {/* CTA Buttons */}
             <div className={styles.btnGroup}>
-              <a href = " /contactus">
+              <a href=" /contactus">
                 <Button className={styles.primaryBtn}>
                   Get a Free Quote
                 </Button>
               </a>
 
-              <a href =" /products">
+              <a href=" /products">
                 <Button className={styles.secondaryBtn}>
                   Explore Mix Grades →
                 </Button>
