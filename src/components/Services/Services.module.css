@@ -2,12 +2,7 @@
   padding: 60px 0;
 }
 
-.heading {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 25px;
-  font-weight: 700;
-}
+
 
 .grid {
   display: grid;

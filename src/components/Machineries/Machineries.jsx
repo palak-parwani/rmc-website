@@ -90,7 +90,7 @@ export default function Machineries() {
 
       {/* MAIN CONTENT */}
       <section className={styles.section}>
-        <h2 className={styles.pageHeading}>Our Machinery & Equipment Lineup</h2>
+        <h2 className="heading2 text-center">Our Machinery & Equipment Lineup</h2>
         <p className={styles.pageSubtext}>
           Built for reliability and performance — ensuring uninterrupted RMC supply and smooth on-site operations.
         </p>

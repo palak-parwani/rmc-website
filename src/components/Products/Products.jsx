@@ -57,7 +57,7 @@ export default function ProductsPage() {
       {/* Hero Banner */}
       <section className={styles.hero}>
         <div className={styles.overlay}>
-          <h1 className={styles.heroTitle}>Our Products</h1>
+          <h1 className="heading2 text-white">Our Products</h1>
           <p className={styles.heroSubtitle}>
             High-performance concrete and construction materials engineered for durability,
             strength, and long-term reliability.

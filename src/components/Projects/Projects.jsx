@@ -35,7 +35,7 @@ export default function Projects() {
     <>
       <section className={styles.section}>
         <div className="container">
-          <h2 className={styles.heading}>
+          <h2 className="heading2 text-center mb-4">
             What We Offer
           </h2>
 
