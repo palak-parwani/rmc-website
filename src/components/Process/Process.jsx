@@ -37,10 +37,10 @@ export default function Process() {
   ];
 
   return (
-    <section className={styles.section}>
+    <section className="standard-padding">
       <div className="container">
 
-        <h2 className="heading2 text-center mb-4">Our Process</h2>
+        <h2 className="heading2 text-center mb-3 mb-md-4">Our Process</h2>
 
         <div className={styles.timeline}>
           {steps.map((s, i) => (

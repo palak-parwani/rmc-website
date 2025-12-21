@@ -33,9 +33,8 @@ export default function Projects() {
 
   return (
     <>
-      <section className={styles.section}>
-        <div className="container">
-          <h2 className="heading2 text-center mb-4">
+      <section className="standard-padding">
+          <h2 className="heading2 text-center mb-3 mb-md-4">
             What We Offer
           </h2>
 
@@ -63,7 +62,6 @@ export default function Projects() {
               </div>
             ))}
           </div>
-        </div>
       </section>
 
       {/* IMAGE POPUP MODAL */}
@@ -76,7 +74,7 @@ export default function Projects() {
               className={styles.closeBtn}
               onClick={() => setPreviewImage(null)}
             >
-              <FiX size={32} />
+              <FiX className={styles.closeicon} />
             </button>
           </div>
         </div>

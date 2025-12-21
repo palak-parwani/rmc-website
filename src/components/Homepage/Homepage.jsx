@@ -10,12 +10,11 @@ const Homepage = () => {
   return (
     <>
       <HeroBanner />
-      <div className='standard-padding'>
-        <AboutIntro />
-        <Services />
-        <Projects />
-        <Process />
-      </div>
+      <AboutIntro />
+      <Services />
+      <Projects />
+      <Process />
+
       <CTA />
       <Footer />
     </>

@@ -7,14 +7,14 @@ import styles from '../Contactus/Contactus.module.css'
 const Map = () => {
   return (
     <>
-    <div className="mt-5">
+    <div className="mt-md-5 mt-0">
           <div className={styles.header}>
             <h2 className="heading2">Get In Touch With Us</h2>
             <p className="desc">Expert support from consultation to concrete delivery.</p>
           </div>
 
           <Row className="g-3 align-items-stretch">
-            <Col md={6}>
+            <Col xxl={6} lg={12}>
               <div className={styles.mapContainer}>
                 <iframe
                   title="Jaipur Map"
@@ -27,7 +27,7 @@ const Map = () => {
                 ></iframe>
               </div>
             </Col>
-            <Col md={6}>
+            <Col xxl={6} lg={12}>
               <div className={styles.infoContainer}>
                 <Row className="g-3 align-items-stretch">
                   <Col md={6}>

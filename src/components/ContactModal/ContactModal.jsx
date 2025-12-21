@@ -61,7 +61,7 @@ export default function ContactModal({ show, onHide }) {
         <Form onSubmit={handleSubmit} className={styles.formArea}>
 
           {/* FIRST NAME & LAST NAME  */}
-          <Row className="mb-3">
+          <Row className={`mb-3 ${styles.gap}`}>
             <Col md={6}>
               <Form.Control
                 type="text"
@@ -126,7 +126,7 @@ export default function ContactModal({ show, onHide }) {
           </Row>
 
           {/* ENQUIRY TYPE & PROJECT TYPE */}
-          <Row className="mb-3">
+          <Row className={`mb-3 ${styles.gap}`}>
             <Col md={6}>
               <Form.Select
                 name="enquiryType"
@@ -164,7 +164,7 @@ export default function ContactModal({ show, onHide }) {
           </Row>
 
           {/* CONCRETE GRADE & LOCATION */}
-          <Row className="mb-3">
+          <Row className={`mb-3 ${styles.gap}`}>
             <Col md={6}>
               <Form.Select
                 name="concreteGrade"

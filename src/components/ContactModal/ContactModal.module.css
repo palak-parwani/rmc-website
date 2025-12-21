@@ -75,4 +75,7 @@ color: #333;
   .modalCard {
     padding: 22px 18px;
   }
+  .gap{
+    gap: 15px;
+  }
 }

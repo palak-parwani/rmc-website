@@ -31,9 +31,8 @@ export default function Services() {
   ];
 
   return (
-    <section className={`${styles.section} `}>
-      <div className="container">
-        <h2 className="heading2 text-center mb-4">Our Services</h2>
+    <section className="standard-padding">
+        <h2 className="heading2 text-center mb-3 mb-md-4">Our Services</h2>
 
         <div className={styles.grid}>
           {services.map((s, i) => (
@@ -48,7 +47,6 @@ export default function Services() {
           ))}
         </div>
 
-      </div>
     </section>
   );
 }

@@ -67,11 +67,13 @@ export default function ProductsPage() {
 
       {/* Intro */}
       <section className="standard-padding">
-        <h2 className={styles.sectionHeading}>Quality Products for Every Construction Need</h2>
-        <p className={styles.sectionText}>
-          From Ready-Mix Concrete to precast solutions, we deliver products crafted with precision,
-          advanced technology, and strict quality control to meet a wide range of project requirements.
-        </p>
+        <div className="d-flex justify-content-center align-items-center flex-column">
+          <h2 className={`heading2 ${styles.heading}`}>Quality Products for Every Construction Need</h2>
+          <p className={`desc mb-lg-3 pb-2 mb-md-3 mb-0 pb-0 ${styles.desc}`}>
+            From Ready-Mix Concrete to precast solutions, we deliver products crafted with precision,
+            advanced technology, and strict quality control to meet a wide range of project requirements.
+          </p>
+        </div>
 
         <div className={styles.grid}>
           {productData.map((prod) => (
@@ -88,7 +90,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-     
+
 
       <Footer />
     </>

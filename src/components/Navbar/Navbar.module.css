@@ -10,6 +10,7 @@
   z-index: 1000;
 }
 
+/* LEFT */
 .navbarLeft {
   display: flex;
   align-items: center;
@@ -19,6 +20,7 @@
   cursor: pointer;
 }
 
+/* RIGHT MENU (Desktop) */
 .navbarRight ul {
   list-style: none;
   display: flex;
@@ -35,5 +37,58 @@
 }
 
 .navbarRight li a:hover {
-  color: #e67e22; /* Construction theme orange */
+  color: #e67e22;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ---------------- MOBILE VIEW ---------------- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1100;
+  }
+
+  .navbarRight {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 65%;
+    max-width: 320px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+    transition: right 0.35s ease-in-out;
+    z-index: 1050;
+    padding-top: 50px;
+  }
+
+  .navbarRight.open {
+    right: 0;
+  }
+
+  .navbarRight ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navbarRight li {
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbarRight li a {
+    display: block;
+    padding: 16px 20px;
+    font-size: 14px;
+  }
 }

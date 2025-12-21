@@ -9,11 +9,6 @@
   margin-bottom: 25px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
 
 .card {
   position: relative;
@@ -125,3 +120,51 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.25);
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.closeicon{
+  font-size: 32px;
+}
+
+/* -------- LAPTOP -------- */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* -------- TABLET -------- */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    height: 300px;
+  }
+}
+
+/* -------- MOBILE -------- */
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: 260px;
+  }
+.closeBtn{
+      width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.closeicon{
+  font-size: 22px;
+}
+  
+}

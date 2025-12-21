@@ -97,28 +97,28 @@ const Aboutus = () => {
       {/* About Section */}
       <div className="standard-padding">
         <Row className="mt-5">
-          <Col md={6}>
-            <h3 className="heading2">About Super Tech Ready Mix Pvt. Ltd.</h3>
-            <p>
+          <Col lg={6}>
+            <h3 className={`heading2 ${styles.heading2}`}>About Super Tech Ready Mix Pvt. Ltd.</h3>
+            <p className={`desc ${styles.desc2}`}>
               Super Tech Ready Mix Pvt. Ltd. is a leading Ready-Mix Concrete (RMC) manufacturer,
-committed to delivering high-quality, durable, and precisely batched concrete
-solutions for residential, commercial, and industrial projects.
+              committed to delivering high-quality, durable, and precisely batched concrete
+              solutions for residential, commercial, and industrial projects.
 
             </p>
-            <p>
+            <p className={`desc ${styles.desc2}`}>
               {` With fully automated batching plants and strict quality control processes,
 we produce a wide range of concrete grades from M20 to M50, ensuring consistency,
 strength, and superior performance across all structural applications.`}
             </p>
-            <p>
+            <p className={`desc ${styles.desc2}`}>
               Backed by experienced engineers, modern transit mixers, and a customer-first
-approach, we have earned the trust of builders, contractors, and developers
-through reliable supply, technical expertise, and on-time delivery.
+              approach, we have earned the trust of builders, contractors, and developers
+              through reliable supply, technical expertise, and on-time delivery.
             </p>
 
           </Col>
 
-          <Col md={6}>
+          <Col md={6} className="d-md-none d-none d-lg-block">
             <img src="/images/contactusBanner.jpg" alt="about" className="w-100 h-100" />
           </Col>
         </Row>
@@ -126,8 +126,8 @@ through reliable supply, technical expertise, and on-time delivery.
 
       {/* Mission, Vision, Values */}
       <div className="standard-padding">
-        <h3 className="heading2">Our Mission, Vision & Core Values</h3>
-        <p className="desc">Built on Purpose. Driven by Vision. Guided by Values.</p>
+        <h3 className={`heading2 ${styles.heading}`}>Our Mission, Vision & Core Values</h3>
+        <p className={`desc mb-4 mb-md-3 ${styles.desc}`}>Built on Purpose. Driven by Vision. Guided by Values.</p>
 
         <Row>
           <Col md={4}>
@@ -152,8 +152,8 @@ through reliable supply, technical expertise, and on-time delivery.
               <h3 className={styles.title}>VISION</h3>
               <p className={styles.text}>
                 To become a leading Ready Mix Concrete provider by adopting advanced
-production technologies, sustainable practices, and uncompromising
-quality standards across every project we serve.
+                production technologies, sustainable practices, and uncompromising
+                quality standards across every project we serve.
               </p>
 
             </div>
@@ -166,9 +166,9 @@ quality standards across every project we serve.
               </div>
               <h3 className={styles.title}>VALUES</h3>
               <p className={styles.text}>
-               Quality, reliability, transparency, and customer commitment form the
-foundation of our values. We believe in ethical practices, strong
-partnerships, and consistent performance on every site.
+                Quality, reliability, transparency, and customer commitment form the
+                foundation of our values. We believe in ethical practices, strong
+                partnerships, and consistent performance on every site.
               </p>
 
             </div>
@@ -178,14 +178,14 @@ partnerships, and consistent performance on every site.
 
       {/* Impact Section */}
       <div className="standard-padding" ref={statsRef}>
-        <h2 className="heading2">Our Impact</h2>
-        <p className="desc">Building trust through quality work — our numbers tell the story.</p>
+        <h2 className={`heading2 ${styles.heading}`}>Our Impact</h2>
+        <p className={`desc mb-4 mb-md-3 ${styles.desc}`}>Building trust through quality work — our numbers tell the story.</p>
 
         <div className={styles.statsContainer}>
           <Row className="text-center">
             {stats.map((item, index) => (
               <Col
-                md={3}
+                xxl={3} lg={6} md={6} sm={12}
                 key={item.id}
                 className={`${styles.colBox} ${index !== 0 ? styles.borderLeft : ""}`}
               >
@@ -202,15 +202,15 @@ partnerships, and consistent performance on every site.
       {/* Why Choose Us */}
       <div className="standard-padding">
         <div className={styles.header}>
-          <h2 className="heading2">Why Choose Us</h2>
-          <p className="desc">
+          <h2 className={`heading2 ${styles.heading}`}>Why Choose Us</h2>
+          <p className={`desc mb-4 mb-md-3 ${styles.desc}`}>
             Your trusted partner for reliable and high-quality Ready Mix Concrete solutions.
           </p>
         </div>
 
         <Row className="gy-4">
           {features.map((item, index) => (
-            <Col md={3} key={index}>
+            <Col xxl={3} lg={6} md={6} sm={12} key={index}>
               <div className={styles.cardBox2}>
                 <div className={styles.icon2}>{item.icon}</div>
                 <h4 className={styles.title2}>{item.title}</h4>

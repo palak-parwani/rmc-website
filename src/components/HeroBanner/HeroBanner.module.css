@@ -1,7 +1,8 @@
 .heroSection {
   position: relative;
   height: 80vh;
-  background-image: url("/images/herobanner.avif"); /* your background image */
+  background-image: url("/images/herobanner.avif");
+  /* your background image */
   background-size: cover;
   background-position: bottom;
   display: flex;
@@ -98,14 +99,43 @@
   font-size: 14px;
   margin: 0;
 }
+
 .padding {
   padding: 44px 26px;
+}
+@media (max-width: 1024px){
+  .title{
+    font-size: 28px;
+  }
+  .subtitle{
+    font-size: 14px;
+  }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .title {
-    font-size: 36px;
+    font-size: 24px;
+  }
+
+  .subtitle {
+    margin: 3px 0 10px;
+    font-size: 12px;
+  }
+
+  .primaryBtn {
+    padding: 12px 13px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  .secondaryBtn {
+    padding: 10px 11px;
+    font-size: 12px;
+  }
+
+  .padding {
+    padding: 23px 19px;
   }
 
   .statsRow {

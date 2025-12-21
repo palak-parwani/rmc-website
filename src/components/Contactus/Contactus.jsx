@@ -17,14 +17,14 @@ import Map from "../Map/Map";
 const Contactus = () => {
   const [formData, setFormData] = useState({
     firstName: "",
-  lastName: "",
-  email: "",
-  phone: "",
-  enquiryType: "",
-  projectType: "",
-  concreteGrade: "",
-  projectLocation: "",
-  message: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    enquiryType: "",
+    projectType: "",
+    concreteGrade: "",
+    projectLocation: "",
+    message: "",
   });
   const [countryCode, setCountryCode] = useState("+91");
   const [phone, setPhone] = useState("");
@@ -48,7 +48,6 @@ const Contactus = () => {
   return (
     <>
       <Navbar />
-
       <section className={styles.contactSection}>
         <div className={styles.overlay}>
           <h1 className={styles.title}>Contact Us</h1>
@@ -58,7 +57,7 @@ const Contactus = () => {
         <Map />
 
         <Row className={`rounded bg-white overflow-hidden ${styles.formBox}`}>
-          <Col md={6} className="p-0">
+          <Col xxl={6} lg={12} className="p-0 d-none d-xxl-block">
             <Image
               src="/images/conatctusFormImg.avif"
               alt="Contact"
@@ -69,12 +68,12 @@ const Contactus = () => {
             />
           </Col>
 
-          <Col md={6} className="p-5">
+          <Col xxl={6} lg={12} className="p-md-5 p-3">
             <h2 className="fw-bold mb-2 heading2">Contact Us</h2>
             <p className="text-muted mb-4 desc">Have a query? Contact us anytime!</p>
 
             <Form onSubmit={handleSubmit}>
-              <Row className="mb-3">
+              <Row className={`mb-3 ${styles.gap}`}>
                 <Col md={6}>
                   <Form.Control
                     type="text"
@@ -99,7 +98,7 @@ const Contactus = () => {
                 </Col>
               </Row>
 
-              <Row className="mb-3">
+              <Row className={`mb-3 ${styles.gap}`}>
                 <Col md={6}>
                   <Form.Control
                     type="email"
@@ -162,30 +161,30 @@ const Contactus = () => {
                       <option value="General">General Inquiry</option>
                       <option value="Support">Construction Project Quote</option>
                       <option value="Renovation">Renovation Work</option>
-<option value="MaterialSupply">Material Supply</option>
+                      <option value="MaterialSupply">Material Supply</option>
                       <option value="partnership">Partnership / Vendor Inquiry</option>
                       <option value="other">Other</option>
                     </Form.Select>
                   </Form.Group>
                 </Col>
-                <Col md={6}>  
+                <Col md={6}>
                   <Form.Group className="mb-3">
-                <Form.Select
-                  name="ProjectType"
-                  value={formData.ProjectType}
-                  className={styles.ContactFormControl}
-                  onChange={handleChange}
-                  required
-                >
-                  <option value="">Project Type</option>
-                  <option value="General">Residential</option>
-                  <option value="Support">Commercial</option>
-                  <option value="Feedback">Industrial</option>
-                  <option value="Feedback">Road / Infrastructure</option>
-                  <option value="Feedback">Foundation / Slab Work</option>
-                  <option value="Feedback">Other</option>
-                </Form.Select>
-              </Form.Group>
+                    <Form.Select
+                      name="ProjectType"
+                      value={formData.ProjectType}
+                      className={styles.ContactFormControl}
+                      onChange={handleChange}
+                      required
+                    >
+                      <option value="">Project Type</option>
+                      <option value="General">Residential</option>
+                      <option value="Support">Commercial</option>
+                      <option value="Feedback">Industrial</option>
+                      <option value="Feedback">Road / Infrastructure</option>
+                      <option value="Feedback">Foundation / Slab Work</option>
+                      <option value="Feedback">Other</option>
+                    </Form.Select>
+                  </Form.Group>
                 </Col>
               </Row>
 
@@ -211,7 +210,7 @@ const Contactus = () => {
                     </Form.Select>
                   </Form.Group>
                 </Col>
-                <Col md={6}>  
+                <Col md={6}>
                   <Form.Control
                     type="text"
                     name="ProjectLocation"
@@ -224,7 +223,7 @@ const Contactus = () => {
                 </Col>
               </Row>
 
-              <Form.Group className="mb-3">
+              <Form.Group className="mb-3 mt-3 mt-md-0">
                 <Form.Control
                   as="textarea"
                   rows={4}
