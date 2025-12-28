@@ -8,10 +8,10 @@ export default function AboutIntro() {
 
         {/* RIGHT CONTENT */}
         <div className={styles.content}>
-          <h2 className="heading2 mb-3 mb-md-4">Your Reliable Partner in Ready Mix Concrete</h2>
+          <h2 className="heading2 mb-3 mb-md-4">Your Reliable Partner in ReadyMix Concrete</h2>
           <p className="desc">
-            Super Tech Ready Mix Pvt. Ltd. is a trusted manufacturer and supplier of
-            high-quality Ready Mix Concrete, engineered to deliver strength, durability,
+            SuperTech ReadyMix Pvt. Ltd. is a trusted manufacturer and supplier of
+            high-quality ReadyMix Concrete, engineered to deliver strength, durability,
             and consistency for every construction requirement.
             <br />Powered by advanced batching plants, stringent quality control systems, and
             a team of experienced professionals, we ensure precision-mixed concrete that
@@ -21,7 +21,7 @@ export default function AboutIntro() {
           </p>
           <p className="desc">
             With a strong focus on timely delivery, technical excellence, and customer
-            satisfaction, Super Tech Ready Mix Pvt. Ltd. stands as a reliable partner in
+            satisfaction, SuperTech ReadyMix Pvt. Ltd. stands as a reliable partner in
             building foundations that last for generations.
           </p>
         </div>

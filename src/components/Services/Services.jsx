@@ -7,7 +7,7 @@ export default function Services() {
     {
       // img: "/images/service1.jpg",
       icon: <FaTruck />,
-      title: "Ready Mix Concrete Supply",
+      title: "ReadyMix Concrete Supply",
       text: "High-strength concrete delivered with precise batching and efficient logistics.",
     },
     {

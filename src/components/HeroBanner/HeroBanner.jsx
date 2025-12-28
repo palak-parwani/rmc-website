@@ -12,7 +12,7 @@ export default function HeroBanner() {
           <Col md={7}>
             <div className={styles.textAnimate}>
               <h1 className={styles.title}>
-                Premium Ready-Mix Concrete for Strong & Reliable Construction
+                Premium ReadyMix Concrete for Strong & Reliable Construction
               </h1>
 
               <p className={styles.subtitle}>

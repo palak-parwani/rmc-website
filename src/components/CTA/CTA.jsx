@@ -16,7 +16,7 @@ export default function CTA() {
 
             {/* LEFT SIDE CONTENT */}
             <Col md={8}>
-              <h2 className={styles.title}>Need Ready-Mix Concrete for Your Next Project?</h2>
+              <h2 className={styles.title}>Need ReadyMix Concrete for Your Next Project?</h2>
 
               <p className={styles.text}>
                 Get high-quality RMC delivered on time with assured strength, accuracy,

@@ -10,7 +10,7 @@ export default function Projects() {
 
   const products = [
     {
-      title: "Ready-Mix Concrete",
+      title: "ReadyMix Concrete",
       desc: "Concrete manufactured in a batching plant and delivered using transit mixers.",
       img: "/images/product1.jpg",
     },

@@ -13,18 +13,18 @@ export default function Footer() {
 
           {/* COMPANY INFO */}
           <Col md={5} className="mt-0">
-            {/* <h3>Super Tech Ready Mix Pvt. Ltd.</h3> */}
+            {/* <h3>SuperTech ReadyMix Pvt. Ltd.</h3> */}
             <Link href="/" onClick={() => setMenuOpen(false)}>
-            <Image
-              src="/images/stlogo.webp"
-              alt="Construction Logo"
-              width={140}
-              height={50}
-              className={styles.logo}
-            />
-          </Link>
-            <p className={`desc ${styles.desc}`}>
-              A trusted manufacturer and supplier of premium Ready Mix Concrete,
+              <Image
+                src="/images/stlogo.webp"
+                alt="Construction Logo"
+                width={140}
+                height={50}
+                className={styles.logo}
+              />
+            </Link>
+            <p className={`desc ${styles.desc} mt-md-3 mt-2`}>
+              A trusted manufacturer and supplier of premium ReadyMix Concrete,
               delivering consistent strength, durability, and on-time supply for
               residential, commercial, and infrastructure projects.
             </p>
@@ -49,14 +49,19 @@ export default function Footer() {
           <Col md={3}>
             <h4 className={`heading2 ${styles.heading}`}>Contact & Services</h4>
             <p className={`desc ${styles.desc}`}>📍 RMC Plant, Your City, India</p>
-            <p className={`desc ${styles.desc}`}>📞 +91 98765 43210</p>
+            <p className={`desc ${styles.desc}`}>
+              📞{" "}
+              <a href="tel:+919829268506">+91 9829268506</a>,{" "}
+              <a href="tel:+919887863410">+91 9887863410</a>
+            </p>
+
             <p className={`desc ${styles.desc}`}>✉️ info@supertechreadymix.com</p>
           </Col>
         </Row>
 
         {/* FOOTER BOTTOM */}
         <div className={styles.bottom}>
-          © {new Date().getFullYear()} Super Tech Ready Mix Pvt. Ltd. All Rights Reserved.
+          © {new Date().getFullYear()} SuperTech ReadyMix Pvt. Ltd. All Rights Reserved.
         </div>
 
       </div>

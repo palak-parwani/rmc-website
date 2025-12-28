@@ -7,10 +7,10 @@ import styles from "./Products.module.css";
 const productData = [
   {
     id: 1,
-    title: "Ready-Mix Concrete (RMC)",
+    title: "ReadyMix Concrete (RMC)",
     img: "/images/product1.jpg",
     description:
-      "Premium-grade Ready-Mix Concrete manufactured using automated batching systems. Available in M20 to M50 grades for residential, commercial, and infrastructure projects.",
+      "Premium-grade ReadyMix Concrete manufactured using automated batching systems. Available in M20 to M50 grades for residential, commercial, and infrastructure projects.",
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export default function ProductsPage() {
         <div className="d-flex justify-content-center align-items-center flex-column">
           <h2 className={`heading2 ${styles.heading}`}>Quality Products for Every Construction Need</h2>
           <p className={`desc mb-lg-3 pb-2 mb-md-3 mb-0 pb-0 ${styles.desc}`}>
-            From Ready-Mix Concrete to precast solutions, we deliver products crafted with precision,
+            From ReadyMix Concrete to precast solutions, we deliver products crafted with precision,
             advanced technology, and strict quality control to meet a wide range of project requirements.
           </p>
         </div>

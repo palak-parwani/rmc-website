@@ -83,7 +83,7 @@ export default function Machineries() {
         <div className={styles.heroOverlay}>
           <h1 className={styles.heroTitle}>Machineries & Equipments</h1>
           <p className={styles.heroSubtitle}>
-            Modern, reliable, and high-capacity equipment powering our Ready-Mix Concrete operations.
+            Modern, reliable, and high-capacity equipment powering our ReadyMix Concrete operations.
           </p>
         </div>
       </section>

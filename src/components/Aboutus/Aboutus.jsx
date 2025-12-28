@@ -98,9 +98,9 @@ const Aboutus = () => {
       <div className="standard-padding">
         <Row className="mt-5">
           <Col lg={6}>
-            <h3 className={`heading2 ${styles.heading2}`}>About Super Tech Ready Mix Pvt. Ltd.</h3>
+            <h3 className={`heading2 ${styles.heading2}`}>About SuperTech ReadyMix Pvt. Ltd.</h3>
             <p className={`desc ${styles.desc2}`}>
-              Super Tech Ready Mix Pvt. Ltd. is a leading Ready-Mix Concrete (RMC) manufacturer,
+              SuperTech ReadyMix Pvt. Ltd. is a leading ReadyMix Concrete (RMC) manufacturer,
               committed to delivering high-quality, durable, and precisely batched concrete
               solutions for residential, commercial, and industrial projects.
 
@@ -137,7 +137,7 @@ strength, and superior performance across all structural applications.`}
               </div>
               <h3 className={styles.title}>MISSION</h3>
               <p className={styles.text}>
-                To manufacture and supply high-quality Ready-Mix Concrete with precision,
+                To manufacture and supply high-quality ReadyMix Concrete with precision,
                 reliability, and efficiency — ensuring strong, safe, and sustainable structures for the future.
               </p>
 
@@ -151,7 +151,7 @@ strength, and superior performance across all structural applications.`}
               </div>
               <h3 className={styles.title}>VISION</h3>
               <p className={styles.text}>
-                To become a leading Ready Mix Concrete provider by adopting advanced
+                To become a leading ReadyMix Concrete provider by adopting advanced
                 production technologies, sustainable practices, and uncompromising
                 quality standards across every project we serve.
               </p>
@@ -204,7 +204,7 @@ strength, and superior performance across all structural applications.`}
         <div className={styles.header}>
           <h2 className={`heading2 ${styles.heading}`}>Why Choose Us</h2>
           <p className={`desc mb-4 mb-md-3 ${styles.desc}`}>
-            Your trusted partner for reliable and high-quality Ready Mix Concrete solutions.
+            Your trusted partner for reliable and high-quality ReadyMix Concrete solutions.
           </p>
         </div>
 
