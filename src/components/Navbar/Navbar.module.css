@@ -18,8 +18,8 @@
 
 .navbarLogo {
   cursor: pointer;
-  width: 250px;
-  height: 63px;
+  width: 309px;
+  height: 62px;
 
 }
 
@@ -52,6 +52,21 @@
 }
 
 /* ---------------- MOBILE VIEW ---------------- */
+@media (max-width: 1024px) {
+  .navbarRight li a {
+    font-size: 14px;
+  }
+
+  .navbarLogo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar {
+    padding: 12px 20px;
+  }
+}
+
 @media (max-width: 800px) {
   .navbarLogo {
     width: 100%;
@@ -114,6 +129,6 @@
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
   }
 }
