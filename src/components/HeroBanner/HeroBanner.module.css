@@ -176,3 +176,8 @@
     min-width: 100%;
   }
 }
+@media (max-width: 600px){
+  .heroSection{
+    height: 70vh;
+  }
+}
