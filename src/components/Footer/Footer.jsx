@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 import styles from "./Footer.module.css";
 import Link from "next/link";
 import { Row, Col } from "react-bootstrap";
@@ -6,13 +7,22 @@ import { Row, Col } from "react-bootstrap";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className="standard-padding">
+      <div className={`${styles.padding} standard-padding`}>
 
         <Row className="gy-4">
 
           {/* COMPANY INFO */}
-          <Col md={5}>
-            <h3>Super Tech Ready Mix Pvt. Ltd.</h3>
+          <Col md={5} className="mt-0">
+            {/* <h3>Super Tech Ready Mix Pvt. Ltd.</h3> */}
+            <Link href="/" onClick={() => setMenuOpen(false)}>
+            <Image
+              src="/images/stlogo.webp"
+              alt="Construction Logo"
+              width={140}
+              height={50}
+              className={styles.logo}
+            />
+          </Link>
             <p className={`desc ${styles.desc}`}>
               A trusted manufacturer and supplier of premium Ready Mix Concrete,
               delivering consistent strength, durability, and on-time supply for

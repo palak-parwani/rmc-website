@@ -1,7 +1,12 @@
 .footer {
-  background: #1e1e1e;
+  background: #e6e6e6;
   padding: 60px 0 20px;
-  color: #ccc;
+  /* color: #ccc; */
+  color: black;
+}
+
+.padding {
+  padding-bottom: 0px !important;
 }
 
 .grid {
@@ -12,10 +17,15 @@
   margin-bottom: 40px;
 }
 
+.logo {
+  width: 246px;
+  height: 62px;
+}
+
 .list {
   margin: 0;
   padding: 0;
-  list-style: none;         
+  list-style: none;
 }
 
 .list li {
@@ -23,14 +33,14 @@
 }
 
 .list li a {
-  text-decoration: none;     
-  color: #ccc;            
+  text-decoration: none;
+  color: black;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .list li a:hover {
-  color: #ccc;           
+  color: black;
 }
 
 .bottom {
@@ -40,42 +50,58 @@
   font-size: 14px;
   margin-top: 25px;
 }
-.heading{
+
+.heading {
   font-size: 20px;
-  color: white;
+  color: black;
 }
-.desc{
-  color: #ccc;
+
+.desc {
+  color: black;
 }
-@media (max-width: 768px){
-  .desc{
+
+@media (max-width: 768px) {
+  .desc {
     font-size: 12px;
     margin-bottom: 0px;
   }
-  .heading{
+
+  .heading {
     font-size: 16px;
   }
-  .list li a{
+
+  .list li a {
     font-size: 12px;
   }
-  .list li{
+
+  .list li {
     margin-bottom: 0px;
   }
 }
-@media (max-width: 576px){
-  .list li a{
+
+@media (max-width: 576px) {
+  .list li a {
     font-size: 14px;
   }
-  .list li{
+
+  .list li {
     margin-bottom: 3px;
   }
-  .bottom{
+
+  .bottom {
     font-size: 12px;
   }
-  .footer{
+
+  .footer {
     padding: 20px 0 20px;
   }
-   .desc{
+
+  .desc {
     margin-bottom: 8px;
+  }
+
+  .logo {
+    width: 220px;
+    height: 60px;
   }
 }
