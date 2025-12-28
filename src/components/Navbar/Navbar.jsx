@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className={styles.navbarLeft}>
           <Link href="/" onClick={() => setMenuOpen(false)}>
             <Image
-              src="/assets/logoo.png"
+              src="/images/stlogo.webp"
               alt="Construction Logo"
               width={140}
               height={50}
