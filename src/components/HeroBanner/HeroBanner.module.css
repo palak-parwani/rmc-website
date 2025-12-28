@@ -29,6 +29,7 @@
   position: relative;
   z-index: 2;
   max-width: 600px;
+  animation: slideFromLeft 0.8s ease-out forwards;
 }
 
 .subtitle {
@@ -39,6 +40,9 @@
   max-width: 550px;
   position: relative;
   z-index: 2;
+  animation: slideFromLeft 0.9s ease-out forwards;
+  animation-delay: 0.15s;
+  opacity: 0;
 }
 
 /* Buttons */
@@ -48,6 +52,9 @@
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
+  animation: slideFromLeft 1s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
 .primaryBtn {
@@ -103,11 +110,32 @@
 .padding {
   padding: 44px 26px;
 }
-@media (max-width: 1024px){
-  .title{
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.textAnimate {
+  animation: slideFromLeft 1s ease-out forwards;
+  position: relative;
+  z-index: 2;
+}
+
+
+@media (max-width: 1024px) {
+  .title {
     font-size: 28px;
   }
-  .subtitle{
+
+  .subtitle {
     font-size: 14px;
   }
 }
