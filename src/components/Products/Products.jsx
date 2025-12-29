@@ -90,7 +90,7 @@ export default function ProductsPage() {
           ))}
         </div>
       </section>
-       <CTA />
+      <CTA />
       <Footer />
     </>
   );
