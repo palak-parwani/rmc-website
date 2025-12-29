@@ -3,6 +3,7 @@
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import styles from "./Products.module.css";
+import CTA from "../CTA/CTA";
 
 const productData = [
   {
@@ -89,9 +90,7 @@ export default function ProductsPage() {
           ))}
         </div>
       </section>
-
-
-
+       <CTA />
       <Footer />
     </>
   );
