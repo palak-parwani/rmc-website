@@ -58,18 +58,21 @@
 }
 
 .primaryBtn {
-  background: #ff7a21 !important;
+  background: linear-gradient(135deg, #cd2207 0%, #ff8200 100%);
   border: none !important;
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 15px;
+  transition: 0.3s ease;
 }
-
+.primaryBtn:hover{
+  background: linear-gradient(135deg, #e97500 0%, #b51c05 100%);
+}
 .secondaryBtn {
-  color: #ff7a21 !important;
-  background: transparent !important;
-  border: 2px solid #ff7a21 !important;
+  color: #ff8200;
+  background: transparent;
+  border: 2px solid #ff8200;
   padding: 12px 25px;
   border-radius: 8px;
   font-weight: 600;

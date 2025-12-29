@@ -28,7 +28,7 @@
 }
 
 .formControl {
-  padding: 11px 14px !important;
+  padding: 11px 14px;
   font-size: 15px;
   border-radius: 8px;
 }
@@ -36,17 +36,17 @@
 .codeBox {
   max-width: 70px;
   text-align: center;
-  border-radius: 8px 0 0 8px !important;
+  border-radius: 8px 0 0 8px;
 }
 
 .submitBtn {
   width: 100%;
-  background: #fa4f1b !important;
-  border: none !important;
+  background: #ff8200;
+  border: none;
   padding: 13px;
   font-size: 16px;
   font-weight: 600;
-  border-radius: 8px !important;
+  border-radius: 8px;
 }
 /* Close Button (top-right) */
 .closeBtn {
