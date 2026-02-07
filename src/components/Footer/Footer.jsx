@@ -48,14 +48,19 @@ export default function Footer() {
           {/* CONTACT + SERVICES */}
           <Col md={3}>
             <h4 className={`heading2 ${styles.heading}`}>Contact & Services</h4>
-            <p className={`desc ${styles.desc}`}>📍 RMC Plant, Your City, India</p>
+            <p className={`desc ${styles.desc}`}>
+              📍 Jaipur–Ajmer National Highway, Near Vrindavan Greens, Sarangpura, Jaipur, Rajasthan 302026
+            </p>
+
             <p className={`desc ${styles.desc}`}>
               📞{" "}
               <a href="tel:+919829268506">+91 9829268506</a>,{" "}
               <a href="tel:+919887863410">+91 9887863410</a>
             </p>
-
-            <p className={`desc ${styles.desc}`}>✉️ info@supertechreadymix.com</p>
+            <p className={`desc ${styles.desc}`}>
+              ✉️ {" "}
+              <a href="">info@supertechreadymix.com</a>
+            </p>
           </Col>
         </Row>
 

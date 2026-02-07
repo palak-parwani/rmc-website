@@ -20,6 +20,11 @@
 .logo {
   width: 246px;
   height: 62px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.logo:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
 .list {
@@ -41,7 +46,8 @@
 }
 
 .list li a:hover {
-  color: black;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .bottom {
@@ -70,6 +76,7 @@
 .desc a:hover {
   text-decoration: underline;
 }
+
 
 @media (max-width: 768px) {
   .desc {

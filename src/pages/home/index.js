@@ -1,10 +1,16 @@
+import Homepage from "../../components/Homepage/Homepage";
+import SEO from "../../components/SEO";
 
-import Homepage from '../../components/Homepage/Homepage'
-
-const index = () => {
+const Index = () => {
   return (
-    <Homepage />
-  )
-}
+    <>
+      <SEO
+        title="SuperTech ReadyMix Pvt. Ltd. | ReadyMix Concrete Manufacturer Jaipur"
+        description="SuperTech ReadyMix Pvt. Ltd. is a trusted ReadyMix Concrete manufacturer on Jaipur–Ajmer National Highway, supplying high-quality concrete for residential, commercial, and infrastructure projects."
+      />
+      <Homepage />
+    </>
+  );
+};
 
-export default index
+export default Index;

@@ -1,10 +1,16 @@
+import Contactus from "../../components/Contactus/Contactus";
+import SEO from "../../components/SEO";
 
-import Contactus from '../../components/Contactus/Contactus'
-
-const index = () => {
+const Index = () => {
   return (
-    <Contactus />
-  )
-}
+    <>
+      <SEO
+        title="Contact SuperTech ReadyMix Pvt. Ltd. | ReadyMix Concrete Jaipur"
+        description="Get in touch with SuperTech ReadyMix Pvt. Ltd., located on Jaipur–Ajmer National Highway, for ReadyMix Concrete supply, pricing, and project inquiries."
+      />
+      <Contactus />
+    </>
+  );
+};
 
-export default index
+export default Index;

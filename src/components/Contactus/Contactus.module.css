@@ -68,15 +68,20 @@
 
 .infoBox {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  /* align-items: center; */
+  /* gap: 15px; */
   background: #f9f9f9;
-  padding: 27px 10px;
-
+  padding: 24px 0px 24px 13px;
+  flex-direction: column;
   border-radius: 4px;
   transition: 0.3s ease;
   border: 1px solid #80808036;
   height: 100%;
+}
+
+.textcontact {
+  margin: 0px 10px 0px 52px;
+
 }
 
 .infoBox:hover {
@@ -102,10 +107,12 @@
   margin: 0;
   font-size: 18px;
   color: #121212;
+      font-size: 20px;
+    font-weight: 700;
 }
 
 .infoBox p {
-  margin: 4px 0 0 0;
+  margin: 0px 0 0 0;
   color: #333;
   font-size: 14px;
 }
@@ -138,7 +145,8 @@
   background-image: linear-gradient(90deg, #102b42d1, #0e558fa6);
   border: 0;
 }
-.sendBtn:hover{
+
+.sendBtn:hover {
   background-image: linear-gradient(90deg, #0e558fe6, #1a6fa6);
 }
 
