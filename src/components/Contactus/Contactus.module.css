@@ -2,7 +2,8 @@
   position: relative;
   width: 100%;
   height: 70vh;
-  background-image: url("../../../public/images/contactusBanner.jpg");
+  /* background-image: url("../../../public/images/contactusBanner.jpg"); */
+  background-image: url("/images/contactbanner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,7 +12,7 @@
   justify-content: center;
 }
 
-.overlay {
+/* .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -26,7 +27,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
+} */
 
 
 .header {
@@ -91,7 +92,7 @@
 
 .iconWrapper {
   background: #edefe7;
-  padding: 12px;
+  padding: 9px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -99,7 +100,7 @@
 }
 
 .icon {
-  font-size: 20px;
+  font-size: 18px;
   color: #121212;
 }
 
@@ -107,14 +108,14 @@
   margin: 0;
   font-size: 18px;
   color: #121212;
-      font-size: 20px;
-    font-weight: 700;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .infoBox p {
   margin: 0px 0 0 0;
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .infoBox a {
@@ -156,7 +157,7 @@
 
 .infoBox p a {
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media (max-width: 992px) {
@@ -184,5 +185,8 @@
 
   .title {
     font-size: 2rem;
+  }
+  .contactSection {
+  background-image: url("/images/contactbannermob.png");
   }
 }

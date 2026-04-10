@@ -22,7 +22,7 @@
 html,
 body {
   width: auto;
-  max-width: 1520px;
+  /* max-width: 1520px; */
   margin: 0 auto;
   /* overflow-x: hidden;  */
   /* overflow-y: auto; Allow vertical scroll */

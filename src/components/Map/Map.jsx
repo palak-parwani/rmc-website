@@ -54,7 +54,7 @@ const Map = () => {
                     <div className={styles.textcontact}>
                       <p className={`desc ${styles.desc}`}>
                         <a href="tel:+919829268506">+91 9829268506</a>,<br />
-                        <a href="tel:+919887863410">+91 9887863410</a>
+                        <a href="tel:+919660029530">+91 9660029530</a>
                       </p>
                     </div>
                   </div>
@@ -69,7 +69,7 @@ const Map = () => {
                       <h4>Email Support</h4>
                     </div>
                     <div className={styles.textcontact}>
-                      <p>construction@gmail.com</p>
+                      <p><a href="mailto:supertechreadymix@gmail.com">supertechreadymix@gmail.com</a></p>
                     </div>
                   </div>
                 </Col>
@@ -98,7 +98,7 @@ const Map = () => {
                       <h4>Office Hours</h4>
                     </div>
                     <div className={styles.textcontact}>
-                      <p>Available 10:00 AM – 8:00 PM for all inquiries.</p>
+                      <p>Available 24Hrs for all inquiries.</p>
                     </div>
                   </div>
                 </Col>

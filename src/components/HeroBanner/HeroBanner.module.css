@@ -1,10 +1,12 @@
 .heroSection {
   position: relative;
   height: 80vh;
-  background-image: url("/images/herobanner.avif");
+  /* background-image: url("/images/herobanner.avif"); */
+  /* background-image: url("/images/one.jpeg"); */
+  background-image: url("/images/banner.png");
   /* your background image */
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   display: flex;
   align-items: center;
 }
@@ -16,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 10, 20, 0.65);
+  background: #0a0a1487;
   backdrop-filter: blur(1px);
 }
 
@@ -66,9 +68,11 @@
   font-size: 15px;
   transition: 0.3s ease;
 }
-.primaryBtn:hover{
+
+.primaryBtn:hover {
   background: linear-gradient(135deg, #e97500 0%, #b51c05 100%);
 }
+
 .secondaryBtn {
   color: #ff8200;
   background: transparent;
@@ -179,8 +183,15 @@
     min-width: 100%;
   }
 }
-@media (max-width: 600px){
-  .heroSection{
-    height: 70vh;
+
+@media (max-width: 600px) {
+  .heroSection {
+    background: #0a0a1440;
+    background-image: url("/images/three.jpeg");
+    height: 80vh;
+    background-position: bottom;
+    width: 100%;
+    background-size: cover;
+
   }
 }

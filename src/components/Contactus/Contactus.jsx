@@ -13,6 +13,10 @@ import { Container, Form, Button } from "react-bootstrap";
 import Image from "next/image";
 import Footer from "../Footer/Footer";
 import Map from "../Map/Map";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Spinner from "react-bootstrap/Spinner";
+import emailjs from "@emailjs/browser";
 
 const Contactus = () => {
   const [formData, setFormData] = useState({
@@ -28,6 +32,7 @@ const Contactus = () => {
   });
   const [countryCode, setCountryCode] = useState("+91");
   const [phone, setPhone] = useState("");
+  const [loading, setLoading] = useState(false);
   const handleCodeChange = (e) => {
     let val = e.target.value;
     // Always ensure "+" is at start
@@ -40,18 +45,59 @@ const Contactus = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    alert("Message Sent Successfully!");
+    setLoading(true);
+
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: `${countryCode} ${phone}`,
+      enquiryType: formData.enquiryType,
+      projectType: formData.projectType,
+      concreteGrade: formData.concreteGrade,
+      projectLocation: formData.projectLocation,
+      message: formData.message,
+    };
+
+    try {
+      await emailjs.send(
+        "service_179rowg",
+        "template_g1e29yr",
+        templateParams,
+        "gN_pRX1X71ZdekkUh"
+      );
+
+      toast.success("Message sent successfully!");
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        enquiryType: "",
+        projectType: "",
+        concreteGrade: "",
+        projectLocation: "",
+        message: "",
+      });
+
+      setPhone("");
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
   return (
     <>
       <Navbar />
       <section className={styles.contactSection}>
-        <div className={styles.overlay}>
+        {/* <div className={styles.overlay}>
           <h1 className={styles.title}>Contact Us</h1>
-        </div>
+        </div> */}
       </section>
       <div className="standard-padding">
         <Map />
@@ -158,11 +204,11 @@ const Contactus = () => {
                       required
                     >
                       <option value="">Enquiry Type</option>
-                      <option value="General">General Inquiry</option>
-                      <option value="Support">Construction Project Quote</option>
-                      <option value="Renovation">Renovation Work</option>
-                      <option value="MaterialSupply">Material Supply</option>
-                      <option value="partnership">Partnership / Vendor Inquiry</option>
+                      <option value="General Inquiry">General Inquiry</option>
+                      <option value="Construction Project Quote">Construction Project Quote</option>
+                      <option value="Renovation Work">Renovation Work</option>
+                      <option value="Material Supply">Material Supply</option>
+                      <option value="Partnership or Vendor Inquiry">Partnership or Vendor Inquiry</option>
                       <option value="other">Other</option>
                     </Form.Select>
                   </Form.Group>
@@ -170,19 +216,19 @@ const Contactus = () => {
                 <Col md={6}>
                   <Form.Group className="mb-3">
                     <Form.Select
-                      name="ProjectType"
-                      value={formData.ProjectType}
+                      name="projectType"
+                      value={formData.projectType}
                       className={styles.ContactFormControl}
                       onChange={handleChange}
                       required
                     >
                       <option value="">Project Type</option>
-                      <option value="General">Residential</option>
-                      <option value="Support">Commercial</option>
-                      <option value="Feedback">Industrial</option>
-                      <option value="Feedback">Road / Infrastructure</option>
-                      <option value="Feedback">Foundation / Slab Work</option>
-                      <option value="Feedback">Other</option>
+                      <option value="Residential">Residential</option>
+                      <option value="Commercial">Commercial</option>
+                      <option value="Industrial">Industrial</option>
+                      <option value="Road / Infrastructure">Road / Infrastructure</option>
+                      <option value="Foundation / Slab Work">Foundation / Slab Work</option>
+                      <option value="Other">Other</option>
                     </Form.Select>
                   </Form.Group>
                 </Col>
@@ -192,31 +238,31 @@ const Contactus = () => {
                 <Col md={6}>
                   <Form.Group className="mb-3">
                     <Form.Select
-                      name="ConcreteGradeRequired"
-                      value={formData.enquiryType}
+                      name="concreteGrade"
+                      value={formData.concreteGrade}
                       className={styles.ContactFormControl}
                       onChange={handleChange}
                       required
                     >
                       <option value="">Concrete Grade Required</option>
-                      <option value="General">M20</option>
-                      <option value="Support">M25</option>
-                      <option value="Feedback">M30</option>
-                      <option value="Feedback">M35</option>
-                      <option value="Feedback">M40</option>
-                      <option value="Feedback">M45</option>
-                      <option value="Feedback">M50</option>
-                      <option value="Feedback">Not Sure (Help me choose)</option>
+                      <option value="M20">M20</option>
+                      <option value="M25">M25</option>
+                      <option value="M30">M30</option>
+                      <option value="M35">M35</option>
+                      <option value="M40">M40</option>
+                      <option value="M45">M45</option>
+                      <option value="M50">M50</option>
+                      <option value="Not Sure (Help me choose)">Not Sure (Help me choose)</option>
                     </Form.Select>
                   </Form.Group>
                 </Col>
                 <Col md={6}>
                   <Form.Control
                     type="text"
-                    name="ProjectLocation"
+                    name="projectLocation"
                     className={styles.ContactFormControl}
                     placeholder="Project Location"
-                    value={formData.email}
+                    value={formData.projectLocation}
                     onChange={handleChange}
                     required
                   />
@@ -234,8 +280,22 @@ const Contactus = () => {
                 />
               </Form.Group>
 
-              <Button type="submit" className={styles.sendBtn}>
-                Send Message
+              <Button type="submit" className={styles.sendBtn} disabled={loading}>
+                {loading ? (
+                  <>
+                    <Spinner
+                      as="span"
+                      animation="border"
+                      size="sm"
+                      role="status"
+                      aria-hidden="true"
+                      className="me-2"
+                    />
+                    Sending...
+                  </>
+                ) : (
+                  "Send Message"
+                )}
               </Button>
             </Form>
           </Col>

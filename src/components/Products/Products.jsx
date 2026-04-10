@@ -1,9 +1,113 @@
+// "use client";
+
+// import Navbar from "../Navbar/Navbar";
+// import Footer from "../Footer/Footer";
+// import styles from "./Products.module.css";
+// import CTA from "../CTA/CTA";
+
+// const productData = [
+//   {
+//     id: 1,
+//     title: "ReadyMix Concrete (RMC)",
+//     img: "/images/product1.jpg",
+//     description:
+//       "Premium-grade ReadyMix Concrete manufactured using automated batching systems. Available in M20 to M50 grades for residential, commercial, and infrastructure projects.",
+//   },
+//   // {
+//   //   id: 2,
+//   //   title: "Concrete Blocks (Solid & Hollow)",
+//   //   img: "/images/product2.jpg",
+//   //   description:
+//   //     "Durable, dimensionally accurate blocks ideal for wall construction, partitions, and load-bearing structures.",
+//   // },
+//   // {
+//   //   id: 3,
+//   //   title: "Interlocking Paver Blocks",
+//   //   img: "/images/product3.jpg",
+//   //   description:
+//   //     "High-strength paver blocks suitable for parking areas, pathways, gardens, and industrial flooring.",
+//   // },
+//   // {
+//   //   id: 4,
+//   //   title: "Precast Concrete Products",
+//   //   img: "/images/product4.jpg",
+//   //   description:
+//   //     "Precast beams, slabs, boundary walls, drain covers, and custom precast elements for fast, efficient construction.",
+//   // },
+//   // {
+//   //   id: 5,
+//   //   title: "Custom Concrete Mix Designs",
+//   //   img: "/images/product1.jpg",
+//   //   description:
+//   //     "Fiber-reinforced mixes, waterproof mixes, high-strength mixes, and customized concrete designed for special projects.",
+//   // },
+//   // {
+//   //   id: 6,
+//   //   title: "Aggregates & Sand Supply",
+//   //   img: "/images/product2.jpg",
+//   //   description:
+//   //     "Quality-tested crushed aggregate, coarse sand, fine sand, and GSB materials for concrete production and site work.",
+//   // },
+// ];
+
+// export default function ProductsPage() {
+//   return (
+//     <>
+//       <Navbar />
+
+//       {/* Hero Banner */}
+//       <section className={styles.hero}>
+//         <div className={styles.overlay}>
+//           <h1 className="heading2 text-white">Our Products</h1>
+//           <p className={styles.heroSubtitle}>
+//             High-performance concrete and construction materials engineered for durability,
+//             strength, and long-term reliability.
+//           </p>
+//         </div>
+//       </section>
+
+//       {/* Intro */}
+//       <section className="standard-padding">
+//         <div className="d-flex justify-content-center align-items-center flex-column">
+//           <h2 className={`heading2 ${styles.heading}`}>Quality Products for Every Construction Need</h2>
+//           <p className={`desc mb-lg-3 pb-2 mb-md-3 mb-0 pb-0 ${styles.desc}`}>
+//             From ReadyMix Concrete to precast solutions, we deliver products crafted with precision,
+//             advanced technology, and strict quality control to meet a wide range of project requirements.
+//           </p>
+//         </div>
+
+//         <div className={styles.grid}>
+//           {productData.map((prod) => (
+//             <div key={prod.id} className={styles.card}>
+//               <div className={styles.imgBox}>
+//                 <img src={prod.img} alt={prod.title} className={styles.img} />
+//               </div>
+
+//               <h3 className={styles.cardTitle}>{prod.title}</h3>
+
+//               <p className={styles.cardText}>{prod.description}</p>
+//             </div>
+//           ))}
+//         </div>
+//       </section>
+//       <CTA />
+//       <Footer />
+//     </>
+//   );
+// }
+
+
+
+
+
+// ...//new cod when  only one product....
 "use client";
 
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import styles from "./Products.module.css";
 import CTA from "../CTA/CTA";
+import Image from "next/image";
 
 const productData = [
   {
@@ -13,41 +117,6 @@ const productData = [
     description:
       "Premium-grade ReadyMix Concrete manufactured using automated batching systems. Available in M20 to M50 grades for residential, commercial, and infrastructure projects.",
   },
-  {
-    id: 2,
-    title: "Concrete Blocks (Solid & Hollow)",
-    img: "/images/product2.jpg",
-    description:
-      "Durable, dimensionally accurate blocks ideal for wall construction, partitions, and load-bearing structures.",
-  },
-  {
-    id: 3,
-    title: "Interlocking Paver Blocks",
-    img: "/images/product3.jpg",
-    description:
-      "High-strength paver blocks suitable for parking areas, pathways, gardens, and industrial flooring.",
-  },
-  {
-    id: 4,
-    title: "Precast Concrete Products",
-    img: "/images/product4.jpg",
-    description:
-      "Precast beams, slabs, boundary walls, drain covers, and custom precast elements for fast, efficient construction.",
-  },
-  {
-    id: 5,
-    title: "Custom Concrete Mix Designs",
-    img: "/images/product1.jpg",
-    description:
-      "Fiber-reinforced mixes, waterproof mixes, high-strength mixes, and customized concrete designed for special projects.",
-  },
-  {
-    id: 6,
-    title: "Aggregates & Sand Supply",
-    img: "/images/product2.jpg",
-    description:
-      "Quality-tested crushed aggregate, coarse sand, fine sand, and GSB materials for concrete production and site work.",
-  },
 ];
 
 export default function ProductsPage() {
@@ -55,41 +124,59 @@ export default function ProductsPage() {
     <>
       <Navbar />
 
-      {/* Hero Banner */}
-      <section className={styles.hero}>
+      {/* Hero */}
+      {/* <section className={styles.hero}>
         <div className={styles.overlay}>
           <h1 className="heading2 text-white">Our Products</h1>
           <p className={styles.heroSubtitle}>
-            High-performance concrete and construction materials engineered for durability,
-            strength, and long-term reliability.
+            High-performance concrete and construction materials built for strength and durability.
           </p>
         </div>
-      </section>
+      </section> */}
 
-      {/* Intro */}
-      <section className="standard-padding">
-        <div className="d-flex justify-content-center align-items-center flex-column">
-          <h2 className={`heading2 ${styles.heading}`}>Quality Products for Every Construction Need</h2>
-          <p className={`desc mb-lg-3 pb-2 mb-md-3 mb-0 pb-0 ${styles.desc}`}>
-            From ReadyMix Concrete to precast solutions, we deliver products crafted with precision,
-            advanced technology, and strict quality control to meet a wide range of project requirements.
+      {/* Product Section */}
+      <section className={`standard-padding  ${styles.productsSection}`}>
+        <div className={styles.topText}>
+          <h2 className="heading2">Built for Every Project</h2>
+          <p className="desc">
+            We deliver premium quality concrete solutions engineered with precision,
+            consistency, and modern batching technology.
           </p>
         </div>
 
-        <div className={styles.grid}>
-          {productData.map((prod) => (
-            <div key={prod.id} className={styles.card}>
-              <div className={styles.imgBox}>
-                <img src={prod.img} alt={prod.title} className={styles.img} />
-              </div>
-
-              <h3 className={styles.cardTitle}>{prod.title}</h3>
-
-              <p className={styles.cardText}>{prod.description}</p>
+        {productData.map((prod) => (
+          <div key={prod.id} className={styles.featureCard}>
+            <div className={styles.imageBox}>
+              <Image
+                src={prod.img}
+                alt={prod.title}
+                fill
+                className={styles.image}
+              />
             </div>
-          ))}
-        </div>
+
+            <div className={styles.content}>
+              <span className={styles.badge}>Premium Product</span>
+
+              <h3>{prod.title}</h3>
+
+              <p>{prod.description}</p>
+
+              <ul>
+                <li>Available in multiple grades (M20–M50)</li>
+                <li>On-time delivery with transit mixers</li>
+                <li>Ideal for residential & commercial use</li>
+                <li>Strict quality testing</li>
+              </ul>
+
+              <a href="/contactus" className={styles.btn}>
+                Request Quote
+              </a>
+            </div>
+          </div>
+        ))}
       </section>
+
       <CTA />
       <Footer />
     </>

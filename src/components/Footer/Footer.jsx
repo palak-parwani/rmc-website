@@ -55,11 +55,11 @@ export default function Footer() {
             <p className={`desc ${styles.desc}`}>
               📞{" "}
               <a href="tel:+919829268506">+91 9829268506</a>,{" "}
-              <a href="tel:+919887863410">+91 9887863410</a>
+              <a href="tel:+919660029530">+91 9660029530</a>
             </p>
             <p className={`desc ${styles.desc}`}>
               ✉️ {" "}
-              <a href="">info@supertechreadymix.com</a>
+              <a href="mailto:supertechreadymix@gmail.com">supertechreadymix@gmail.com</a>
             </p>
           </Col>
         </Row>

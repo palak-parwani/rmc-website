@@ -89,14 +89,14 @@ const Aboutus = () => {
 
       {/* Banner */}
       <section className={styles.AboutSection}>
-        <div className={styles.overlay}>
+        {/* <div className={styles.overlay}>
           <h1 className={styles.title}>About Us</h1>
-        </div>
+        </div> */}
       </section>
 
       {/* About Section */}
       <div className="standard-padding">
-        <Row className="mt-5">
+        <Row className={`mt-5 ${styles.height}`}>
           <Col lg={6}>
             <h3 className={`heading2 ${styles.heading2}`}>About SuperTech ReadyMix Pvt. Ltd.</h3>
             <p className={`desc ${styles.desc2}`}>
@@ -119,7 +119,16 @@ strength, and superior performance across all structural applications.`}
           </Col>
 
           <Col md={6} className="d-md-none d-none d-lg-block">
-            <img src="/images/contactusBanner.jpg" alt="about" className="w-100 h-100" />
+            <img
+              src="/images/three.jpeg"
+              alt="about"
+              style={{
+                width: "100%",
+                height: "50%",
+                objectFit: "cover",
+                objectPosition: "bottom",
+              }}
+            />
           </Col>
         </Row>
       </div>

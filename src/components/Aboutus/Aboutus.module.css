@@ -1,8 +1,8 @@
 .AboutSection {
   position: relative;
   width: 100%;
-  height: 70vh;
-  background-image: url("../../../public/images/contactusBanner.jpg");
+  height: 75vh;
+  background-image: url("/images/aboutbanner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.overlay {
+/* .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -26,7 +26,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
+} */
 
 .mission-section {
   background-color: #f8f9fa;
@@ -63,9 +63,17 @@
   margin-bottom: 50px;
 }
 
+.about-right-image img{
+  width: 100%;
+  height: 66%;
+}
+
 .missionBox p {
   color: #444;
   line-height: 1.6;
+}
+.height{
+  height: 460px;
 }
 
 .visionHeader {
@@ -311,5 +319,8 @@
   .icon {
     width: 35px;
     height: 35px;
+  }
+  .AboutSection {
+  background-image: url("/images/aboutbannermob.png");
   }
 }
