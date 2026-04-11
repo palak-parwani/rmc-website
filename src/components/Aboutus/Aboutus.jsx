@@ -97,7 +97,7 @@ const Aboutus = () => {
       {/* About Section */}
       <div className="standard-padding">
         <Row className={`mt-5 ${styles.height}`}>
-          <Col lg={6}>
+          <Col md={6}>
             <h3 className={`heading2 ${styles.heading2}`}>About SuperTech ReadyMix Pvt. Ltd.</h3>
             <p className={`desc ${styles.desc2}`}>
               SuperTech ReadyMix Pvt. Ltd. is a leading ReadyMix Concrete (RMC) manufacturer,
@@ -128,6 +128,7 @@ strength, and superior performance across all structural applications.`}
                 objectFit: "cover",
                 objectPosition: "bottom",
               }}
+               className={styles.imageheight}
             />
           </Col>
         </Row>

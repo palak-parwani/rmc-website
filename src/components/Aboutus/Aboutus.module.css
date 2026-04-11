@@ -298,6 +298,12 @@
   .number {
     font-size: 30px;
   }
+  .height{
+    height: 100%;
+  }
+  .imageheight{
+    height: 100% !important;
+  }
 }
 
 @media (max-width: 576px) {
