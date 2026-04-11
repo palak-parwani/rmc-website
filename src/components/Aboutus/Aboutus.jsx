@@ -118,7 +118,7 @@ strength, and superior performance across all structural applications.`}
 
           </Col>
 
-          <Col md={6} className="d-md-none d-none d-lg-block">
+          <Col md={6}>
             <img
               src="/images/three.jpeg"
               alt="about"
