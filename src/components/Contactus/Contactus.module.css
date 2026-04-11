@@ -188,5 +188,6 @@
   }
   .contactSection {
   background-image: url("/images/contactbannermob.png");
+  height: 70vh;
   }
 }
